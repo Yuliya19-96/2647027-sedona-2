@@ -1,12 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <img src="#" alt="Логотип" />
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="main.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about-sedona.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="button-want-here" href="#">ХОЧУ СЮДА!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="hero">  <!--Секция с векторным текстом-->
+        <h1 class="visually-hidden">SEDONA</h1>
+        <!--Понять как перенести вектор Welcome, to the gorgeous, Sedona, Because the Grand Canyon sucks!-->
+      </section>
+      <section class="intro"> <!--Секция с заголовком-->
+        <h2 class="intro_title">Седона — небольшой городок в Аризоне,<br />заслуживающий большего!</h2>
+        <p class="intro_description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </section>
+      <section class="about-sedona"> <!--Секция преимуществ-->
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="sedona-list">
+          <li class="sedona-item">
+            <h3 class="sedona-title">Настоящий<br />городок</h3>
+            <p class="sedona-text">Седона — не аттракцион для<br />туристов, там течёт своя<br />жизнь</p>
+          </li>
+          <li class="sedona-item">
+            <img src="#"alt="Уютные улочки и дома в центре города Седона, Аризона"/>
+          </li>
+          <li class="sedona-item">
+            <h3 class="sedona-title">Небольшая<br />площадь</h3>
+            <p class="sedona-text">Все достопримечательности<br />находятся очень близко</p>
+          </li>
+          <li class="sedona-item">
+            <h3 class="sedona-title">Красивая <br />дорога</h3>
+            <p class="sedona-text">Ехать в Седону из Лас-Вегаса<br />совсем не скучно!</p>
+          </li>
+          <li class="sedona-item">
+            <h3 class="sedona-title">Мало <br />туристов</h3>
+            <p class="sedona-text">Большинство едет в Гранд<br />Каньон и толпится там</p>
+          </li>
+          <li class="sedona-item">
+            <img src="" alt="Панорамный вид на горный ландшафт Седоны с красными скалами и соснами"/>
+          </li>
+          <li class="sedona-item">
+            <h3 class="sedona-title">Там есть<br />мост дьявола</h3>
+            <p class="sedona-text">Да, по нему можно пройти!<br />Если вы осмелитесь,<br />разумеется</p>
+          </li>
+        </ul>
+      </section>
+      <section class="invitation">
+        <h2 class="invitation-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+        <p class="invitation-text">Опытный персонал и качественное обслуживание!</p>
+      </section>
+      <section class="comfort">
+        <ul class="comfort-list">
+          <li class="comfort-item">
+            <h3 class="comfort-title">Жильё</h3>
+            <p class="comfort-text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+          </li>
+          <li class="comfort-item">
+            <h3 class="comfort-title">Еда</h3>
+            <p class="comfort-text">Всегда заказывайте <br>топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+          </li>
+          <li class="comfort-item">
+            <h3 class="comfort-title">Сувениры</h3>
+            <p class="comfort-text">Не только китайского,<br>но и настоящего местного<br> производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </section>
+      <section class="email">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <input type="email" name="email" placeholder="Ваш e-mail">
+        <button>Подписаться</button>
+      </section>
+    </main>
+    <footer class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="https://vk.com/htmlacademy"></a>
+          <span class="visually-hidden">Вконтакте</span>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://t.me/htmlacademy"></a>
+          <span class="visually-hidden">Телеграм</span>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.youtube.com/user/htmlacademyru"></a>
+          <span class="visually-hidden">Youtube</span>
+        </li>
+        <li class="footer-social-item">
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </li>
+      </ul>
+    </footer>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <p>
+      Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
+        href="https://htmlacademy.ru/intensive/htmlcss"
+        >HTML и CSS. Профессиональная вёрстка сайтов</a
+      >».
+    </p>
   </body>
 </html>
+
+
+
+Vkontakte — https://vk.com/htmlacademy
+Telegram — https://t.me/htmlacademy
+Youtube — https://www.youtube.com/user/htmlacademyru
+Логотип .html academy ведёт на главную страницу сайта разработчика — https://htmlacademy.ru/
+Оживлять макет не нужно, нужна только вёрстка
+Браузерный фокус — фокус, который отрабатывает в браузере по умолчанию.
