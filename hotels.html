@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="page-header">
+      <a class="navigation-logo" href="index.html"></a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип Города Седоны" src="">
+          <img class="page-header-logo" alt="Логотип Города Седоны" src="images/logo/logo-sedona.svg">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -45,7 +45,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <img class="icon-home" src="" alt=""> <!--Icon home-->
+              <img class="icon-home" src="images/Vector-home.svg" alt="Главная">
             </a>
           </li>
           <!--стрелочка. нужно ли тут добавлять img class="" src="" alt="" -->
@@ -62,19 +62,16 @@
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="pool">Бассейн
-                </label>
+                <input class="control-input" type="checkbox" name="pool" id="pool">
+                <label class="control" for="pool">Бассейн</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="parking">Парковка
-                </label>
+                <input class="control-input" type="checkbox" name="parking" id="parking">
+                <label class="control" for="parking">Парковка</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
-                </label>
+                <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">
+                <label class="control" for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -83,19 +80,16 @@
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accommodation" value="hotel">Гостиница
-                </label>
+                <input class="control-input" type="radio" name="accommodation" value="hotel" id="hotel">
+                <label class="control" for="hotel">Гостиница</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accommodation" value="motel">Мотель
-                </label>
+                <input class="control-input" type="radio" name="accommodation" value="motel" id="motel">
+                <label class="control" for="motel">Мотель</label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accommodation" value="apartments">Апартаменты
-                </label>
+                <input class="control-input" type="radio" name="accommodation" value="apartments" id="apartments">
+                <label class="control" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -103,7 +97,7 @@
           <fieldset class = "price-filter-group">
             <legend class = "price-filter-title">Стоимость, ₽:</legend>
             <label class = "filter-price-label">от
-              <input class = "filter-price-input" type = "number" name="min-price" value="0" min = "0" placeholder="0">
+            <input class = "filter-price-input" type = "number" name="min-price" value="0" min = "0" placeholder="0">
             </label>
             <label class = "filter-price-label">до
               <input class = "filter-price-input" type = "number" name="max-price" value="9000" min = "0" placeholder="9000">
@@ -116,7 +110,7 @@
       </section>
 
       <section class="hotel-catalog">
-        <h2 class="catalog-hotel">Найдено гостиниц: 38</h2>
+        <h2 class="catalog-hotel">Найдено гостиниц: 38</h2>  <!--Заменить с h2 на b -->
 
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
@@ -138,13 +132,13 @@
           <!-- ОТЕЛЬ 1 -->
           <li class="hotel-card-item">
             <article class="hotel-card">
-              <img class="hotel-card__image" src="" alt="">
+              <img class="hotel-card__image" width="300" height="212" src="images/hotels/hotel-1.jpg" alt="">
               <h3 class="hotel-card__title">Amara Resort & Spa</h3>
               <p>Гостиница
                 <span>От 4000 ₽</span>
               </p>
               <a class="hotel-card-button button" href="">подробнее</a>
-              <a class="button-favorites">в избранное</a> <!--Может тут будет обычная кнопка т.к мы остаемся на странице-->
+              <button class="button-favorites">в избранное</button>
               <p class = "hotel-card__stars">
                 <span class = "visually-hidden">4 звезды</span>
               </p>
@@ -154,13 +148,13 @@
           <!-- ОТЕЛЬ 2 -->
           <li class="hotel-card-item">
             <article class="hotel-card">
-              <img class="hotel-card__image" src="" alt="">
+              <img class="hotel-card__image" width="300" height="212" src="images/hotels/hotel-2.jpg" alt="">
               <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
               <p>Гостиница
                 <span>От 5000 ₽</span>
               </p>
               <a class="hotel-card-button button" href="">подробнее</a>
-              <a class="button-favorites">в избранном</a> <!--Может тут будет обычная кнопка т.к мы остаемся на странице-->
+              <button class="button-favorites">в избранном</button>
               <p class = "hotel-card__stars">
                 <span class = "visually-hidden">4 звезды</span>
               </p>
@@ -170,13 +164,13 @@
           <!-- ОТЕЛЬ 3 -->
           <li class="hotel-card-item">
             <article class="hotel-card">
-              <img class="hotel-card__image" src="" alt="">
+              <img class="hotel-card__image" width="300" height="212" src="images/hotels/hotel-3.jpg" alt="">
               <h3 class="hotel-card__title">Desert Quail Inn</h3>
               <p>Гостиница
                 <span>От 2500 ₽</span>
               </p>
               <a class="hotel-card-button button" href="">подробнее</a>
-              <a class="button-favorites">в избранное</a> <!--Может тут будет обычная кнопка т.к мы остаемся на странице-->
+              <button class="button-favorites">в избранное</button>
               <p class = "hotel-card__stars">
                 <span class = "visually-hidden">3 звезды</span>
               </p>
@@ -186,13 +180,13 @@
           <!-- ОТЕЛЬ 4 -->
           <li class="hotel-card-item">
             <article class="hotel-card">
-              <img class="hotel-card__image" src="" alt="">
+              <img class="hotel-card__image" width="300" height="212" src="images/hotels/hotel-4.jpg" alt="">
               <h3 class="hotel-card__title">GreenTree Inn</h3>
               <p>Гостиница
                 <span>От 1500 ₽</span>
               </p>
               <a class="hotel-card-button button" href="">подробнее</a>
-              <a class="button-favorites">в избранное</a> <!--Может тут будет обычная кнопка т.к мы остаемся на странице-->
+              <button class="button-favorites">в избранное</button>
               <p class = "hotel-card__stars">
                 <span class = "visually-hidden">2 звезды</span>
               </p>
@@ -235,15 +229,21 @@
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy"></a>
+          <a class="button" href="https://vk.com/htmlacademy">
+            <img class="social-icon" src="images/icon/Vector-vk.svg" alt="">
+          </a>
           <span class="visually-hidden">Вконтакте</span>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy"></a>
+          <a class="button" href="https://t.me/htmlacademy">
+            <img class="social-icon" src="images/icon/Vector-tg.svg" alt="">
+          </a>
           <span class="visually-hidden">Телеграм</span>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru"></a>
+          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <img class="social-icon" src="images/icon/Vector-yt.svg" alt="">
+          </a>
           <span class="visually-hidden">Youtube</span>
         </li>
         <li class="footer-social-item">
@@ -251,8 +251,8 @@
         </li>
         <li>
           <a class="logo-footer" href="https://htmlacademy.ru/">
-            <img class="logo" alt="Логотип htmlacademy" src="#">
-          </a> <!--html logo-->
+            <img class="logo" width="114.9" height="32.9" alt="Логотип htmlacademy" src="images/logo/logo_htmlacademy.png">
+          </a>
         </li>
       </ul>
     </footer>
