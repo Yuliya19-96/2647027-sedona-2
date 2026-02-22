@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -105,6 +105,16 @@ body {
 .footer-social-list {
   list-style: none;
 } /*Убирает маркер*/
+
+.button-search,
+.subscribe-btn,
+.button-want-here,
+.email-input,
+.button-favorites,
+.button-favorites-green,
+.sort-select {
+  font: inherit;
+} /*Принудительное наследование*/
 
 .footer-phone {
   font-style: normal;
