@@ -1,0 +1,33 @@
+<svg viewBox="0 0 140 37" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140.000000" height="37.000000" fill="none" customFrame="#000000">
+	<defs>
+		<clipPath id="clipPath_0">
+			<rect width="18.000000" height="17.000000" x="0.000000" y="10.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_1">
+			<rect width="18.000000" height="17.000000" x="24.000000" y="10.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_2">
+			<rect width="18.000000" height="17.000000" x="48.000000" y="10.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_3">
+			<rect width="18.000000" height="17.000000" x="72.000000" y="10.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+	</defs>
+	<rect id="Звёзды" width="140.000000" height="37.000000" x="0.000000" y="0.000000" />
+	<g id="star 1" clip-path="url(#clipPath_0)" customFrame="url(#clipPath_0)">
+		<rect id="star 1" width="18.000000" height="17.000000" x="0.000000" y="10.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+		<path id="Vector" d="M9 10L11.1 16.5L18 16.5L12.4 20.5L14.6 27L9 23L3.4 27L5.6 20.5L0 16.5L6.9 16.5L9 10Z" fill="rgb(130.518,179.315,211.182)" fill-rule="nonzero" />
+	</g>
+	<g id="star 2" clip-path="url(#clipPath_1)" customFrame="url(#clipPath_1)">
+		<rect id="star 2" width="18.000000" height="17.000000" x="24.000000" y="10.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+		<path id="Vector" d="M33 10L35.1 16.5L42 16.5L36.4 20.5L38.6 27L33 23L27.4 27L29.6 20.5L24 16.5L30.9 16.5L33 10Z" fill="rgb(130.518,179.315,211.182)" fill-rule="nonzero" />
+	</g>
+	<g id="star 3" clip-path="url(#clipPath_2)" customFrame="url(#clipPath_2)">
+		<rect id="star 3" width="18.000000" height="17.000000" x="48.000000" y="10.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+		<path id="Vector" d="M57 10L59.1 16.5L66 16.5L60.4 20.5L62.6 27L57 23L51.4 27L53.6 20.5L48 16.5L54.9 16.5L57 10Z" fill="rgb(130.518,179.315,211.182)" fill-rule="nonzero" />
+	</g>
+	<g id="star 4" opacity="0" clip-path="url(#clipPath_3)" customFrame="url(#clipPath_3)">
+		<rect id="star 4" width="18.000000" height="17.000000" x="72.000000" y="10.000000" opacity="0" fill="rgb(255,255,255)" fill-opacity="0" />
+		<path id="Vector" d="M81 10L83.1 16.5L90 16.5L84.4 20.5L86.6 27L81 23L75.4 27L77.6 20.5L72 16.5L78.9 16.5L81 10Z" fill="rgb(130.518,179.315,211.182)" fill-rule="nonzero" />
+	</g>
+</svg>
