@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>HTML Academy: Седона</title>
+    <title>Sedona</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/logo/logo-sedona.svg" type="image/png" />
   </head>
 
   <body>
@@ -25,28 +26,26 @@
           <li class="navigation-item">
             <a class="navigation-link" href="about-sedona.html">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link" href="hotels.html"
-              >Гостиницы</a
-            >
+          <li class="navigation-item navigation-current">
+            <a class="navigation-link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user" href="#">
               <span class="icon icon-search"></span>
               <span class="visually-hidden">Поиск</span>
               <!-- Здесь будут значки прописаные в css-->
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user" href="#">
               <span class="icon icons_heart"></span>
               <span class="visually-hidden">Избранное 12</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="button-want-here" href="#">Хочу сюда!</a>
+          <li class="navigation-item-user">
+            <a class="button-want-here white" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -66,7 +65,6 @@
                 />
               </a>
             </li>
-            <!--стрелочка. нужно ли тут добавлять img class="" src="" alt="" -->
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
@@ -81,7 +79,7 @@
             method="get"
           >
             <fieldset class="catalog-filter-group white">
-              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <legend class="filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <input
@@ -89,8 +87,12 @@
                     type="checkbox"
                     name="pool"
                     id="pool"
+                    checked
                   />
-                  <label class="control" for="pool">Бассейн</label>
+                  <label class="control" for="pool">
+                    <span class="custom-checkbox"></span>
+                    Бассейн</label
+                  >
                 </li>
                 <li class="catalog-filter-item">
                   <input
@@ -98,8 +100,11 @@
                     type="checkbox"
                     name="parking"
                     id="parking"
+                    checked
                   />
-                  <label class="control" for="parking">Парковка</label>
+                  <label class="control" for="parking">
+                    <span class="custom-checkbox"></span>Парковка</label
+                  >
                 </li>
                 <li class="catalog-filter-item">
                   <input
@@ -108,13 +113,15 @@
                     name="wi-fi"
                     id="wi-fi"
                   />
-                  <label class="control" for="wi-fi">Wi-Fi</label>
+                  <label class="control" for="wi-fi">
+                    <span class="custom-checkbox"></span>Wi-Fi</label
+                  >
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="catalog-filter-group white">
-              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <legend class="filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <input
@@ -123,8 +130,11 @@
                     name="accommodation"
                     value="hotel"
                     id="hotel"
+                    checked
                   />
-                  <label class="control" for="hotel">Гостиница</label>
+                  <label class="control" for="hotel">
+                    <span class="custom-radio"></span>Гостиница</label
+                  >
                 </li>
                 <li class="catalog-filter-item">
                   <input
@@ -134,7 +144,9 @@
                     value="motel"
                     id="motel"
                   />
-                  <label class="control" for="motel">Мотель</label>
+                  <label class="control" for="motel">
+                    <span class="custom-radio"></span>Мотель</label
+                  >
                 </li>
                 <li class="catalog-filter-item">
                   <input
@@ -144,36 +156,45 @@
                     value="apartments"
                     id="apartments"
                   />
-                  <label class="control" for="apartments">Апартаменты</label>
+                  <label class="control" for="apartments">
+                    <span class="custom-radio"></span>Апартаменты</label
+                  >
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="price-filter-group">
-              <legend class="price-filter-title">Стоимость, ₽:</legend>
-              <label class="filter-price-label">
-                <input
-                  class="filter-price-input"
-                  type="number"
-                  name="min-price"
-                  value="0"
-                  min="0"
-                  placeholder="0"
-                />
-                <span>от</span>
-              </label>
-              <label class="filter-price-label"
-                >до
-                <input
-                  class="filter-price-input"
-                  type="number"
-                  name="max-price"
-                  value="9000"
-                  min="0"
-                  placeholder="9000"
-                />
-              </label>
-            </fieldset>
+            <div class="price-filter-group white">
+              <h3 class="filter-title">Стоимость, ₽:</h3>
+
+              <div class="price-inputs">
+                <p class="form-price">
+                  <span class="price-description">от</span>
+                  <input
+                    class="filter-price-input first-price"
+                    type="text"
+                    value="0"
+                    name="from"
+                  />
+                </p>
+
+                <p class="form-price">
+                  <span class="price-description">до</span>
+                  <input
+                    class="filter-price-input last-price"
+                    type="text"
+                    value="9000"
+                    name="after"
+                  />
+                </p>
+              </div>
+
+              <div class="price-range">
+                <button class="range__button range-min" type="button"></button>
+                <button class="range__button range-max" type="button"></button>
+                <div class="range-progress"></div>
+                <div class="range-background"></div>
+              </div>
+            </div>
 
             <div class="div-buttons">
               <button class="button-apply" type="submit">Применить</button>
@@ -195,17 +216,26 @@
               Сначала дорогое
             </option>
           </select>
-          <div class="button-list">
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать подробно</span>
-            </a>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-          </div>
+          <ul class="view-switch">
+            <li class="view-switch-item view-switch-current">
+              <a href="#" class="view-switch-link">
+                <img src="images/icon/mode-grid.svg" alt="Показать карточки" />
+              </a>
+            </li>
+            <li class="view-switch-item">
+              <a href="#" class="view-switch-link">
+                <img
+                  src="images/icon/mode-single.svg"
+                  alt="Показать по одной"
+                />
+              </a>
+            </li>
+            <li class="view-switch-item">
+              <a href="#" class="view-switch-link">
+                <img src="images/icon/mode-list.svg" alt="Показать список" />
+              </a>
+            </li>
+          </ul>
         </div>
 
         <ul class="hotel-card-list">
@@ -218,7 +248,7 @@
                 width="300"
                 height="212"
                 src="images/hotels/hotel-1.jpg"
-                alt=""
+                alt="Курортный отель с бассейном и горным пейзажем"
               />
               <p class="word-hotel">
                 Гостиница
@@ -245,7 +275,7 @@
                 width="300"
                 height="212"
                 src="images/hotels/hotel-2.jpg"
-                alt=""
+                alt="Гостиница с видом на скалы"
               />
               <p class="word-hotel">
                 Гостиница
@@ -272,7 +302,7 @@
                 width="300"
                 height="212"
                 src="images/hotels/hotel-3.jpg"
-                alt=""
+                alt="Уютный мотель с красивым ландшафтом"
               />
               <p class="word-hotel">
                 Гостиница
@@ -299,7 +329,7 @@
                 width="300"
                 height="212"
                 src="images/hotels/hotel-4.jpg"
-                alt=""
+                alt="бюджетный отель рядом с национальным парком"
               />
               <p class="word-hotel">
                 Гостиница
