@@ -39,7 +39,7 @@
           </li>
           <li class="navigation-item-user">
             <a class="navigation-link-user" href="#">
-              <span class="icon icons_heart"></span>
+              <span class="icon icons-heart"></span>
               <span class="visually-hidden">Избранное 12</span>
             </a>
           </li>
@@ -147,6 +147,7 @@
                 height="72"
                 src="images/icon/vector-house.svg"
                 alt=""
+                aria-hidden="true"
               />
               <h3 class="comfort-title">Жильё</h3>
               <p class="comfort-text">
@@ -159,8 +160,9 @@
                 class="comfort-icon"
                 width="75"
                 height="72"
-                src="images/icon/advantage-icon_food.svg"
+                src="images/icon/advantage-icon-food.svg"
                 alt=""
+                aria-hidden="true"
               />
               <h3 class="comfort-title">Еда</h3>
               <p class="comfort-text">
@@ -175,6 +177,7 @@
                 height="72"
                 src="images/icon/vector-souvenirs.svg"
                 alt=""
+                aria-hidden="true"
               />
               <h3 class="comfort-title">Сувениры</h3>
               <p class="comfort-text">
@@ -191,7 +194,9 @@
             Укажите предполагаемые даты поездки, <br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
+          <label for="modal-toggle" class="button-search" href="#"
+            >Поиск гостиницы в Седоне</label
+          >
         </section>
 
         <section class="email-index bg-email white" data-test="subscribe">
@@ -199,14 +204,19 @@
           <p class="subscribe-text">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form class="email-subscribe">
+          <form
+            class="email-subscribe"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
             <input
               class="email-input"
               type="email"
               name="email"
               placeholder="Ваш e-mail"
+              required
             />
-            <button class="subscribe-btn">Подписаться</button>
+            <button class="subscribe-btn" type="submit">Подписаться</button>
           </form>
         </section>
       </div>
@@ -257,7 +267,7 @@
         <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <address class="footer-logo">
-        <a class="logo-footer" href="https://htmlacademy.ru/">
+        <a class="logo-footer" href="https://htmlacademy.ru/intensive/htmlcss">
           <img
             class="logo"
             width="115"
@@ -268,6 +278,108 @@
         </a>
       </address>
     </footer>
+    <input
+      type="checkbox"
+      id="modal-toggle"
+      class="modal-toggle" style="display: none"
+    />
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <label for="modal-toggle" class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </label>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+
+        <form class="search-form" action="" method="post">
+          <!-- Дата заезда -->
+          <label class="form-label checkin" for="checkin">Дата заезда:</label>
+          <div class="input-wrapper input-wrapper-checkin">
+            <input
+              class="form-input checkin-input"
+              id="checkin"
+              type="text"
+              placeholder="27 апреля 2020"
+            />
+            <span class="calendar-icon"></span>
+          </div>
+          <span class="form-error">Мы не можем отправить вас в прошлое.</span>
+
+          <!-- Дата выезда -->
+          <label class="form-label" for="checkout">Дата выезда:</label>
+          <div class="input-wrapper input-wrapper-checkout">
+            <input
+              class="form-input checkout-input"
+              type="text"
+              id="checkout"
+              placeholder="1 сентября 2023"
+            />
+            <span class="calendar-icon"></span>
+          </div>
+          <span class="form-success"
+            >На эти даты есть свободные номера. Пока есть.</span
+          >
+          <div class="adults-and-children">
+            <!-- Взрослые -->
+            <label class="form-label" for="adults">Взрослые:</label>
+            <div class="counter-wrapper adults-counter">
+              <div class="counter">
+                <button
+                  class="counter-btn counter-btn--minus"
+                  type="button"
+                ></button>
+                <input
+                  class="counter-input"
+                  type="number"
+                  id="adults"
+                  value="2"
+                  min="0"
+                />
+                <button
+                  class="counter-btn counter-btn--plus"
+                  type="button"
+                ></button>
+              </div>
+            </div>
+
+            <!-- Дети -->
+            <label class="form-label children" for="children">Дети:</label>
+            <div class="tooltip">
+              <button class="tooltip-btn" type="button">i</button>
+              <span class="tooltip-text"
+                >Укажите количество детей,<br />
+                которые будут с вами, возраст<br />
+                которых от 6 до 18 лет. Дети<br />
+                до 6 лет размещаются<br />
+                бесплатно.</span
+              >
+            </div>
+            <div class="counter-wrapper">
+              <div class="counter">
+                <button
+                  class="counter-btn counter-btn--minus"
+                  type="button"
+                ></button>
+                <input
+                  class="counter-input"
+                  type="number"
+                  id="children"
+                  value="1"
+                  min="0"
+                />
+                <button
+                  class="counter-btn counter-btn--plus"
+                  type="button"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <button class="search-btn" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
 
     <p>
       Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a

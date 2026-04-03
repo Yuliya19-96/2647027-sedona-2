@@ -27,7 +27,7 @@
             <a class="navigation-link" href="about-sedona.html">О Седоне</a>
           </li>
           <li class="navigation-item navigation-current">
-            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+            <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -40,7 +40,7 @@
           </li>
           <li class="navigation-item-user">
             <a class="navigation-link-user" href="#">
-              <span class="icon icons_heart"></span>
+              <span class="icon icons-heart"></span>
               <span class="visually-hidden">Избранное 12</span>
             </a>
           </li>
@@ -76,7 +76,7 @@
           <form
             class="catalog-filter"
             action="https://echo.htmlacademy.ru/"
-            method="get"
+            method="post"
           >
             <fieldset class="catalog-filter-group white">
               <legend class="filter-title">Инфраструктура:</legend>
@@ -198,7 +198,7 @@
 
             <div class="div-buttons">
               <button class="button-apply" type="submit">Применить</button>
-              <button class="button-reset" type="submit">Сбросить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -218,12 +218,12 @@
           </select>
           <ul class="view-switch">
             <li class="view-switch-item view-switch-current">
-              <a href="#" class="view-switch-link">
+              <a href="catalog.html?view=tile" class="view-switch-link">
                 <img src="images/icon/mode-grid.svg" alt="Показать карточки" />
               </a>
             </li>
             <li class="view-switch-item">
-              <a href="#" class="view-switch-link">
+              <a href="catalog.html?view=card" class="view-switch-link">
                 <img
                   src="images/icon/mode-single.svg"
                   alt="Показать по одной"
@@ -231,7 +231,7 @@
               </a>
             </li>
             <li class="view-switch-item">
-              <a href="#" class="view-switch-link">
+              <a href="catalog.html?view=list" class="view-switch-link">
                 <img src="images/icon/mode-list.svg" alt="Показать список" />
               </a>
             </li>
@@ -433,13 +433,12 @@
         <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <address class="footer-logo">
-        <a class="logo-footer" href="https://htmlacademy.ru/">
+        <a class="logo-footer" href="https://htmlacademy.ru/intensive/htmlcss">
           <img
             class="logo"
             width="115"
             height="33"
-            alt="Логотип htmlacademy"
-            src="images/logo/logo_htmlacademy.png"
+            alt="Логотип htmlacademy" src="images/logo/logo_htmlacademy.png"
           />
         </a>
       </address>
