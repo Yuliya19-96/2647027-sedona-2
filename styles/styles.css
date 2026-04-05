@@ -109,7 +109,7 @@ body {
 .button-favorites,
 .hotel-card-rating,
 .button-favorites-green,
-.subscribe-btn {
+.subscribe-btn, .interested-title, .subscribe {
   text-transform: uppercase;
 } /*Всё крупным шрифтом*/
 
@@ -207,8 +207,7 @@ body {
   line-height: 23px;
 }
 
-.navigation-link,
-.button-want-here {
+.navigation-link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -266,6 +265,9 @@ body {
   padding: 8px 30px;
   box-sizing: border-box;
   border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;;
 }
 
 .button-search {
@@ -273,6 +275,7 @@ body {
   border-radius: 4px;
   background-color: #756157;
   margin-top: 54px;
+  box-sizing: border-box;
 }
 
 .hotel-card-button {
