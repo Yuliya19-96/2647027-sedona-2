@@ -53,7 +53,7 @@ body {
 .breadcrumbs,
 .hotel-card-list,
 .catalog-filter-group,
-.view-switch {
+.view-switch, .navigation-user {
   margin: 0;
   padding: 0;
 }
@@ -121,7 +121,7 @@ body {
 .hotel-card-list,
 .pagination,
 .footer-social-list,
-.view-switch {
+.view-switch, .navigation-user {
   list-style-type: none;
 } /*Убирает маркер*/
 
@@ -256,38 +256,36 @@ body {
   font-weight: 700;
 }
 
-/*Кнопки*/
+/*Кнопки*/ /* Коричневые */
+.button-want-here, .button-search, .hotel-card-button {
+  background-color: #756157;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
 
 .button-want-here {
   width: 92px;
-  background-color: #756157;
-  color: white;
   padding: 8px 30px;
-  box-sizing: border-box;
-  border-radius: 4px;
+  min-width: 160px;
+  max-width: 300px;
   font-size: 16px;
   font-weight: 700;
-  line-height: 20px;;
+  line-height: 20px;
+  display: block;
 }
 
 .button-search {
   width: 376px;
-  border-radius: 4px;
-  background-color: #756157;
   margin-top: 54px;
-  box-sizing: border-box;
 }
 
 .hotel-card-button {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #ffffff;
   padding: 8px 26px;
-  width: 88px;
   min-height: 20px;
-  border-radius: 4px;
-  background-color: #756157;
 }
 
 .hotel-card-button, .button-favorites, .button-favorites-green {
@@ -296,44 +294,50 @@ body {
 
 .button-want-here:hover,
 .button-search:hover,
-.hotel-card-button:hover {
-  background-color: #5e4b44;
+.hotel-card-button:hover,
+.button-want-here:focus,
+.button-search:focus,
+.hotel-card-button:focus {
+  background-color: #615048;
 }
 
 .button-want-here:active,
 .button-search:active,
 .hotel-card-button:active {
-  background-color: #4a3a34;
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
+/* Коричневая и голубая */
 .button-search,
 .subscribe-btn {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   padding: 8px 50px 8px 50px;
+}
+
+/* Голубые */
+.subscribe-btn, .button-favorites {
+  background-color: #82b3d3;
   color: #ffffff;
+  border: none;
 }
 
 .subscribe-btn {
   width: 232px;
   min-height: 52px;
-  border: none;
   border-radius: 0 4px 4px 0;
-  background-color: #82b3d3;
 }
 
 .button-favorites {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #ffffff;
   padding: 8px;
   width: 143px;
   min-height: 20px;
   border-radius: 4px;
-  border: none;
-  background-color: #82b3d3;
 }
 
 .search-btn:hover,
@@ -376,6 +380,7 @@ body {
 /*Шапка - header*/
 .navigation {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
   padding: 0 70px;
@@ -389,7 +394,7 @@ body {
 }
 
 .navigation-list {
-  width: 527px;
+  width: 465px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -402,8 +407,11 @@ body {
 }
 
 .navigation-user {
-  width: 290px;
-  margin-left: 140px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 345px;
 }
 
 .navigation-item-user:last-child {
@@ -458,6 +466,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 69px 0;
+  margin-bottom: 21px;
 }
 
 .intro-title {
