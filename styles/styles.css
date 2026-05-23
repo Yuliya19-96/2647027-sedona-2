@@ -27,7 +27,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   color: rgba(0, 0, 0, 1);
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   text-align: center;
   width: 1200px;
   margin: 0 auto;
@@ -108,7 +108,7 @@ body {
 .invitation-text,
 .interested-title,
 .subscribe-text {
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 .white .sedona-title,
@@ -118,7 +118,7 @@ body {
 .white .inner-header-title,
 .white .catalog-filter-item,
 .white .btn-want-here {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .button-search, .subscribe-btn, .button-apply,
@@ -144,7 +144,7 @@ body {
 .word-hotel {
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 .control {
@@ -165,7 +165,7 @@ body {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   margin: 0;
   padding: 0;
   margin-bottom: 32px;
@@ -197,10 +197,10 @@ body {
 
 /*Кнопки*/ /* Коричневые */
 .btn-want-here, .button-search, .hotel-card-button {
-  background-color: #756157;
+  background-color: rgba(117, 97, 87, 1);
   border-radius: 4px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .btn-want-here {
@@ -237,13 +237,14 @@ body {
 .btn-want-here:focus,
 .button-search:focus,
 .hotel-card-button:focus {
-  background-color: #615048;
+  background-color: rgba(97, 80, 72, 1);
+  outline: none;
 }
 
 .btn-want-here:active,
 .button-search:active,
 .hotel-card-button:active {
-  background-color: #756157;
+  background-color: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -259,7 +260,7 @@ body {
 /* Голубые */
 .subscribe-btn, .button-favorites {
   background-color: rgba(130, 179, 211, 1);
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   border: none;
 }
 
@@ -297,7 +298,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   width: 141px;
   min-height: 36px;
   border: none;
@@ -314,7 +315,7 @@ body {
 /*Главная*/ /* */
 
 /*Шапка - header*/
-.nav{
+.nav {
   display: flex;
   justify-content: space-between;
   width: 1200px;
@@ -322,6 +323,7 @@ body {
   padding: 0 70px;
   box-sizing: border-box;
   position: relative;
+  min-height: 64px;
 }
 
 .nav-logo {
@@ -350,8 +352,27 @@ body {
   width: 345px;
 }
 
+.nav-link-user {
+  color: rgba(0, 0, 0, 1);
+}
+
+.nav-link-user:hover,
+.nav-link-user:focus {
+  color:rgba(117, 97, 87, 1);
+  outline: none;
+}
+
+.nav-link-user:active {
+  color:rgba(117, 97, 87, 0.3)
+}
+
 .nav-item-user:last-child {
   margin-left: 20px;
+}
+
+.nav-item-user:nth-child(2) {
+  padding-right: 13px;
+  padding-left: 24px;
 }
 
 /* полоска акктивности */
@@ -537,7 +558,7 @@ body {
   box-sizing: border-box;
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .email-input::placeholder {
@@ -579,6 +600,7 @@ line-height: 24px;
 
 .social-link:focus {
   color: rgba(104, 162, 202, 1);
+  outline: none;
 }
 
 .social-link:active {
@@ -603,6 +625,7 @@ line-height: 24px;
 
 .phone:focus, .logo-footer:focus {
   color: rgba(117, 97, 87, 1);
+  outline: none;
 }
 
 .phone:active,.logo-footer:active {
@@ -632,7 +655,7 @@ line-height: 24px;
 
 /*Векторные картинки*/
 
-.icon {
+/* .icon {
   width: 20px;
   height: 20px;
   display: flex;
@@ -641,11 +664,11 @@ line-height: 24px;
   justify-content: center;
   align-items: center;
   padding: 22px 12px;
+}*/
+
+.icons-heart {
+  position: relative;
 }
-
-
-
-
 
 .icons-heart:after {
   content: "12";
@@ -655,11 +678,11 @@ line-height: 24px;
   width: 20px;
   height: 20px;
   line-height: 20px;
-  top: 10px;
-  left: 19px;
+  top: -7px;
+  left: -11px;
   font-size: 10px;
   text-align: center;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   z-index: 10;
 }
 
@@ -681,7 +704,7 @@ line-height: 24px;
 }
 
 .breadcrumbs {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   display: flex;
   font-size: 16px; /* возвращаем размер только нужным */
   line-height: 1;
@@ -749,7 +772,7 @@ line-height: 24px;
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   margin-right: 16px;
   vertical-align: middle;
   flex-shrink: 0;
@@ -774,7 +797,7 @@ line-height: 24px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   margin-right: 16px;
   vertical-align: middle;
   flex-shrink: 0;
@@ -812,7 +835,7 @@ line-height: 24px;
 .filter-price-input {
   width: 143px;
   min-height: 48px;
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
   border: none;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -838,7 +861,7 @@ line-height: 24px;
 .range-button {
   width: 20px;
   height: 20px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   border-radius: 5px;
   position: absolute;
   z-index: 1;
@@ -857,7 +880,7 @@ line-height: 24px;
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
   bottom: -10px;
 }
 
@@ -880,7 +903,7 @@ line-height: 24px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   padding: 8px 50px 8px 50px;
   margin-bottom: 32px;
 }
@@ -893,7 +916,7 @@ line-height: 24px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   padding: 8px 50px 8px 50px;
 }
 
@@ -906,7 +929,7 @@ line-height: 24px;
   margin: 0 47px 0 200px;
   min-width: 292px;
   border: none;
-  outline: 2px solid #e5e5e5;
+  outline: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   position: relative;
   padding-left: 19px;
@@ -972,7 +995,7 @@ line-height: 24px;
 }
 
 .hotel-card {
-  outline: 2px solid #e6e6e6;
+  outline: 2px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
   width: 300px;
   padding: 20px;
@@ -1035,14 +1058,14 @@ line-height: 24px;
 .hotel-card-rating {
   width: 95px;
   border-radius: 4px;
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
   padding: 9px 22px;
 }
 
 .big-line {
   width: 1060px;
   height: 0;
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgba(230, 230, 230, 1);
   margin-top: 38px;
   margin-bottom: 38px;
 }
@@ -1053,7 +1076,7 @@ line-height: 24px;
 
 /* Фон для текущего li */
 .pagination-current.pagination-item {
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 /* Цвет текста ссылки внутри текущего li */
@@ -1086,7 +1109,7 @@ line-height: 24px;
 }
 
 .pagination-link {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .pagination-link:active {
@@ -1127,7 +1150,7 @@ line-height: 24px;
   position: relative;
   margin: auto;
   padding: 64px 70px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 30px;
 }
 
@@ -1181,7 +1204,7 @@ line-height: 24px;
 }
 
 .checkin-input {
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
   width: 100%;
   min-height: 48px;
   border-radius: 4px;
@@ -1195,7 +1218,7 @@ line-height: 24px;
 }
 
 .checkout-input {
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
   width: 100%;
   min-height: 48px;
   border-radius: 4px;
@@ -1234,7 +1257,7 @@ line-height: 24px;
 
 .form-error {
   grid-column: 2 / 6;
-  color: #ff5757;
+  color: rgba(255, 87, 87, 1);
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -1249,7 +1272,7 @@ line-height: 24px;
   line-height: 21px;
   text-align: left;
   padding: 0 20px;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 .adults-and-children {
@@ -1272,8 +1295,8 @@ line-height: 24px;
   width: 26px;
   height: 26px;
   border: none;
-  background-color: #83b3d3;
-  color: #ffffff;
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
   border-radius: 50%;
   font-weight: 700;
   justify-content: center;
@@ -1285,7 +1308,7 @@ line-height: 24px;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 5px; /* ← отступ сверху (было margin-bottom) */
-  background-color: #333333;
+  background-color: rgba(51, 51, 51, 1);
   color: white;
   padding: 15px 18px 18px 22px;
   border-radius: 6px;
@@ -1310,7 +1333,7 @@ line-height: 24px;
   width: 31px;
   height: 48px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
   text-align: center;
   font-weight: 700;
   appearance: textfield;
@@ -1343,7 +1366,7 @@ line-height: 24px;
   background-color: rgba(130, 179, 211, 1);
   grid-column: 1 / -1;
   grid-row: 7 / 8;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
