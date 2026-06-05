@@ -495,12 +495,10 @@ body {
   display: flex;
 }
 
-.icon-item {
-  padding: 0 12px;
-}
-
 .nav-link-user {
   color: #000000;
+  padding: 18px 12px;
+  display: block;
 }
 
 .nav-item-user:last-child {
@@ -817,17 +815,6 @@ body {
 
 /*Векторные картинки*/
 
-/* .icon {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  padding: 22px 12px;
-}*/
-
 .icons-heart {
   position: relative;
 }
@@ -876,16 +863,28 @@ body {
 }
 
 
-.breadcrumbs-item:not(:last-child)::after {
+.breadcrumbs-item:not(:first-child)::before {
   content: "";
   display: inline-block;
   width: 6px;
   height: 10px;
-  margin: 0 11px 0 7px;
+  margin: 0 6px 0 12px;
   background-image: url(../images/icon/arrow-right.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.icon-home {
+  background-image: url(/images/icon/home.svg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 10px;
+  padding-left: 1px;
 }
 
 .hotel-filters {
@@ -902,7 +901,6 @@ body {
 }
 
 .catalog-filter-group {
-  /* width: 150.43px; */
   min-height: 157px;
   border: none;
   display: flex;
@@ -959,19 +957,10 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: 141px;
+  flex-wrap: wrap;
 }
 
-/* Кастомный кружок */
-/* .custom-radio {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  margin-right: 16px;
-  vertical-align: middle;
-  flex-shrink: 0;
-} */
 
 /* Когда радио-кнопка выбрана — показываем точку */
 .control-input + .custom-radio::before {
@@ -1009,7 +998,7 @@ body {
 }
 
 .price-filter-group {
-  margin: 0 68px 0 150px;
+  margin: 0 69px 0 148px;
 }
 
 .price-inputs {
@@ -1194,6 +1183,17 @@ body {
   align-items: center;
 }
 
+.mode-grid {
+  background-image: url("../images/icon/mode-grid.svg");
+}
+.mode-single {
+  background-image: url("../images/icon/mode-single.svg");
+}
+
+.mode-list {
+  background-image: url("../images/icon/mode-list.svg");
+}
+
 .view-switch-item:hover {
   outline: 2px solid #000000;
 }
@@ -1216,6 +1216,10 @@ body {
 
 .view-switch-link {
   display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 48px;
 }
 
 /* Отели */
@@ -1404,15 +1408,33 @@ body {
 .modal-close {
   position: absolute;
   padding: 0;
-  top: 60px;
-  right: 50px;
+  top: 63px;
+  right: 53px;
   width: 52px;
   height: 52px;
   border: none;
-  background-color: #2ad792;
+  background-color: #F2F2F2;
   cursor: pointer;
   border-radius: 50%;
   color: #000000;
+  background-image: url(../images/icon/close-modal.svg);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close:active {
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-title {
@@ -1479,8 +1501,8 @@ body {
 
 .form-input:focus,
 .email-input:focus {
-  outline: 3px solid rgba(131, 179, 211, 1);
-  background: rgba(230, 230, 230, 1);
+  outline: 3px solid #82b3d3;
+  background: #e6e6e6;
   ;
 }
 
@@ -1507,6 +1529,7 @@ body {
   line-height: 21px;
   text-align: left;
   padding: 0 20px;
+  margin-top: 4px;
 }
 
 .form-success {
@@ -1517,6 +1540,7 @@ body {
   text-align: left;
   padding: 0 20px;
   color: #333333;
+  margin-top: 3px;
 }
 
 .adults-and-children {
@@ -1593,20 +1617,43 @@ body {
   align-items: center;
   padding: 14px 10px;
   border: none;
+  outline: none;
 }
 
-.counter-btn--plus {
-  background-image: url(../images/icon/icons-plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.counter-btn:focus-visible .counter-icon {
+  color: #000000;
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.counter-icon{
+  color: #756157;
+}
+
+.counter-icon:hover {
+  color: #000000;
+}
+
+.counter-icon:focus {
+  color: #000000;
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.counter-icon:active {
+  color: #756157;
+}
+
+.plus {
   border-radius: 0 4px 4px 0;
 }
 
-.counter-btn--minus {
-  background-image: url(../images/icon/icons-minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.minus {
   border-radius: 4px 0 0 4px;
+}
+
+.counter-btn--plus:hover, .counter-btn--minus:hover {
+  color: rgba(0, 0, 0, 1);
 }
 
 .search-btn {

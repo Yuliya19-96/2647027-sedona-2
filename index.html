@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Sedona</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/logo/logo-sedona.svg" type="image/png">
+    <link rel="icon" type="images/png" href="images/icon/favicon.png">
   </head>
 
   <body>
@@ -147,7 +147,8 @@
           <h2 class="subscribe">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="email-subscribe" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email-input" type="email" name="email" placeholder="Ваш e-mail" required>
+            <label for="subscribe-email" class="visually-hidden">Email для рассылки</label>
+            <input class="email-input" id="subscribe-email" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="subscribe-btn" type="submit">Подписаться</button>
           </form>
         </section>
@@ -199,6 +200,7 @@
               d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2L7.9 6.2L7.9 0L5.9 0L5.9 15.5L7.9 15.5L7.9 10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8L14.1 15.5L16.1 15.5L16.1 9.4C16.2 6.4 14.3 4.5 11.6 4.5ZM50.6 15.4C48.8 15.4 47.8 14.4 47.8 12.7L47.8 0L49.8 0L49.8 12.3C49.8 13 50.2 13.4 50.9 13.4L52.6 13.4L52.6 15.4L50.6 15.4ZM26.6 4.8L21.8 4.8L21.8 1.1L19.8 1.1L19.8 4.9L17.9 4.9L17.9 6.9L19.8 6.9L19.8 12.9C19.8 14.6 20.8 15.6 22.5 15.6L26.6 15.6L26.6 13.6L22.9 13.6C22.2 13.6 21.8 13.2 21.8 12.5L21.8 6.8L26.6 6.8L26.6 4.8ZM37.6 6.7C38.2 5.4 39.5 4.6 41.1 4.6C43.6 4.6 45.1 6.4 45 8.9L45 15.4L43 15.4L43 9.1C43 7.5 42.1 6.5 40.6 6.5C39.4 6.5 38 7.4 38 9.8L38 15.4L36 15.4L36 9.1C36 7.5 35.1 6.5 33.6 6.5C32 6.5 31 8 31 10L31 15.4L29 15.4L29 4.8L30.9 4.8L30.9 6.4L31 6.4C31.6 5.4 32.7 4.6 34.1 4.6C35.7 4.6 36.9 5.5 37.5 6.7L37.6 6.7ZM0 15.5L0 12.9L2.5 12.9L2.5 15.5L0 15.5ZM64.8 17.9C66.5 17.9 67.8 18.7 68.7 19.8L68.7 13.4L70.7 13.4L70.7 28.8L68.7 28.8L68.7 27.3L68.6 27.3C67.8 28.3 66.5 29.1 64.8 29.1C61.6 29.1 59.4 26.8 59.4 23.5C59.4 20.2 61.7 17.9 64.8 17.9ZM25 17.9C26.7 17.9 28 18.6 28.9 19.7L28.9 18.2L30.9 18.2L30.9 28.8L28.9 28.8L28.9 27.2L28.8 27.2C28 28.3 26.8 29.1 25 29.1C21.9 29.1 19.6 26.8 19.6 23.5C19.6 20.2 21.9 17.9 25 17.9ZM51.2 17.9C52.9 17.9 54.2 18.6 55.1 19.7L55.1 18.2L57.1 18.2L57.1 28.8L55.1 28.8L55.1 27.2L55 27.2C54.2 28.3 53 29.1 51.2 29.1C48.1 29.1 45.8 26.8 45.8 23.5C45.8 20.2 48.1 17.9 51.2 17.9ZM94.6 19.9C95.3 18.7 96.6 17.9 98.2 17.9C100.7 17.9 102.2 19.7 102.1 22.3L102.1 28.8L100.1 28.8L100.1 22.5C100.1 20.9 99.2 19.9 97.7 19.9C96.5 19.9 95.1 20.8 95.1 23.2L95.1 28.8L93.1 28.8L93.1 22.5C93.1 20.9 92.2 19.9 90.7 19.9C89.1 20 88.1 21.4 88.1 23.4L88.1 28.8L86.1 28.8L86.1 18.2L88 18.2L88 19.7C88.6 18.6 89.7 17.9 91.1 17.9C92.7 17.9 93.9 18.7 94.5 19.9L94.6 19.9ZM44.2 22C43.7 19.6 41.6 17.9 38.8 17.9C35.4 17.9 33.2 20.4 33.2 23.5C33.2 26.6 35.4 29.1 38.8 29.1C41.6 29.1 43.7 27.3 44.2 24.9L42.1 24.9C41.7 26.2 40.4 27.2 38.8 27.2C36.6 27.2 35.2 25.6 35.2 23.6C35.2 21.6 36.6 20 38.8 20C40.4 20 41.6 21 42.1 22.2L44.2 22.2L44.2 22ZM78.3 17.9C75 17.9 72.8 20.4 72.8 23.5C72.8 26.5 74.9 29.1 78.3 29.1C80.8 29.1 82.8 27.8 83.5 25.5L81.4 25.5C80.9 26.5 79.8 27.1 78.4 27.1C76.5 27.1 75.1 25.8 75 24.2L83.8 24.2C84 20.6 81.8 17.9 78.3 17.9ZM109.4 27L105.8 18.1L103.6 18.1L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9L104.2 30.9L104.2 32.9L106.7 32.9C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1L112.8 18.1L109.4 27ZM78.3 19.8C80 19.8 81.3 20.8 81.6 22.4L75.1 22.4C75.4 20.9 76.6 19.8 78.3 19.8ZM21.7 23.5C21.7 25.5 23.1 27.1 25.3 27.1C27.5 27.1 28.9 25.4 28.9 23.5C28.9 21.5 27.5 19.9 25.3 19.9C23.1 19.9 21.7 21.5 21.7 23.5ZM47.9 23.5C47.9 25.5 49.3 27.1 51.5 27.1C53.6 27.1 55.1 25.4 55.1 23.5C55.1 21.5 53.7 19.9 51.5 19.9C49.3 19.9 47.9 21.5 47.9 23.5ZM61.5 23.5C61.5 25.5 62.9 27.1 65.1 27.1C67.2 27.1 68.6 25.5 68.7 23.5C68.7 21.5 67.3 19.9 65.1 19.9C62.9 19.9 61.5 21.5 61.5 23.5Z"
               fill="currentColor" fill-rule="evenodd" />
           </svg>
+          <span class="visually-hidden">Страница академии</span>
         </a>
       </address>
     </footer>
@@ -212,7 +214,7 @@
           <!-- Дата заезда -->
           <label class="form-label checkin" for="checkin">Дата заезда:</label>
           <div class="input-wrapper input-wrapper-checkin">
-            <input class="form-input checkin-input" id="checkin" type="text" placeholder="27 апреля 2020">
+            <input class="form-input checkin-input" id="checkin" type="text" placeholder="27 апреля 2020" required>
             <span class="calendar-icon"></span>
           </div>
           <span class="form-error">Мы не можем отправить вас в прошлое.</span>
@@ -220,7 +222,7 @@
           <!-- Дата выезда -->
           <label class="form-label" for="checkout">Дата выезда:</label>
           <div class="input-wrapper input-wrapper-checkout">
-            <input class="form-input checkout-input" id="checkout" type="text" placeholder="1 сентября 2023">
+            <input class="form-input checkout-input" id="checkout" type="text" placeholder="1 сентября 2023" required>
             <span class="calendar-icon"></span>
           </div>
           <span class="form-success">На эти даты есть свободные номера. Пока есть.</span>
@@ -230,9 +232,25 @@
             <label class="form-label" for="adults">Взрослые:</label>
             <div class="counter-wrapper adults-counter">
               <div class="counter">
-                <button class="counter-btn counter-btn--minus" type="button"></button>
-                <input class="counter-input" id="adults" type="number" value="2" min="0">
-                <button class="counter-btn counter-btn--plus" type="button"></button>
+                <button class="counter-btn minus" type="button">
+                  <svg class="counter-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="20.000000" height="20.000000" fill="none">
+                    <rect id="icons/minus" width="20.000000" height="20.000000" x="0.000000" y="0.000000" />
+                    <path id="Vector" d="M2 0L0 0L0 14L2 14L2 0Z" fill="currentColor" fill-opacity="0.300000012"
+                      fill-rule="evenodd" transform="matrix(6.12323e-17,-1,1,6.12323e-17,3,11)" />
+                  </svg>
+                </button>
+                <input class="counter-input" id="adults" type="text" value="2" min="0">
+                <button class="counter-btn plus" type="button">
+                  <svg class="counter-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="20.000000" height="20.000000" fill="none">
+                    <rect id="icons/plus" width="20.000000" height="20.000000" x="0.000000" y="0.000000" />
+                    <path id="Vector" d="M17 9L11 9L11 3L9 3L9 9L3 9L3 11L9 11L9 17L11 17L11 11L17 11L17 9Z"
+                      fill="currentColor" fill-opacity="0.300000012" fill-rule="nonzero" />
+                  </svg>
+                </button>
               </div>
             </div>
 
@@ -245,16 +263,32 @@
             </div>
             <div class="counter-wrapper">
               <div class="counter">
-                <button class="counter-btn counter-btn--minus" type="button"></button>
-                <input class="counter-input" id="children" type="number" value="1" min="0">
-                <button class="counter-btn counter-btn--plus" type="button"></button>
+                <button class="counter-btn minus" type="button">
+                  <svg class="counter-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="20.000000" height="20.000000" fill="none">
+                    <rect id="icons/minus" width="20.000000" height="20.000000" x="0.000000" y="0.000000" />
+                    <path id="Vector" d="M2 0L0 0L0 14L2 14L2 0Z" fill="currentColor" fill-opacity="0.300000012"
+                      fill-rule="evenodd" transform="matrix(6.12323e-17,-1,1,6.12323e-17,3,11)" />
+                  </svg>
+                </button>
+                <input class="counter-input" id="children" type="text" value="2" min="0">
+                <button class="counter-btn plus" type="button">
+                  <svg class="counter-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="20.000000" height="20.000000" fill="none">
+                    <rect id="icons/plus" width="20.000000" height="20.000000" x="0.000000" y="0.000000" />
+                    <path id="Vector" d="M17 9L11 9L11 3L9 3L9 9L3 9L3 11L9 11L9 17L11 17L11 11L17 11L17 9Z"
+                      fill="currentColor" fill-opacity="0.300000012" fill-rule="nonzero" />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
           <button class="search-btn" type="submit">Найти</button>
 
         </form>
-        <button class="modal-close"> X
+        <button class="modal-close">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
       </div>
